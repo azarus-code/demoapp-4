@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name:  "demoapp-4"
+  description: sample
+  tags:
+    - github
+    - aks
+    - nodejs
+  links:
+    - url: https://github.com/azarus-code/demoapp-4
+      title: demoapp-4 Repository
+  annotations:
+    github.com/project-slug: azarus-code/demoapp-4
+    github.com/workflow-ref: .github/workflows/deploy.yaml@main
+    backstage.io/managed-by-location: url:https://github.com/azarus-code/demoapp-4
+    backstage.io/managed-by-origin-location: url:https://github.com/azarus-code/demoapp-4
+    backstage.io/kubernetes-id: "demoapp-4"
+    backstage.io/kubernetes-cluster: "bsidp-cluster"
+    backstage.io/kubernetes-namespace: 'default'
+    # backstage.io/techdocs-ref: dir:.
+    #backstage.io/techdocs-ref: url:http://<your-service-endpoint>
+spec:
+  type: service
+  owner: "azarus-code"
+  lifecycle: production
